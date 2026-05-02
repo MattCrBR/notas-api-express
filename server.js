@@ -77,6 +77,10 @@ app.put('/notas/:id', (req, res) => {
 // DELETE - exclui nota
 app.delete('/notas/:id', (req, res) => {
   const notes = readNotes();
+  const exists = notes.find(n => n.id === req.params.id);
+  if (!exists) {
+    return res.status(404).json({ error: 'Nota não encontrada' });
+  }
   const novasNotas = notes.filter(n => n.id !== req.params.id);
   saveNotes(novasNotas);
   res.json({ mensagem: 'Nota removida' });
