@@ -1,14 +1,16 @@
 [
     {
         "id": "1",
-        "titulo": "Lembretes",
-        "texto": "Comprar leite e pão",
-        "criadoEm": "2024-06-01T10:00:00Z"
+        "title": "Lembretes",
+        "content": "Comprar leite e pão",
+        "createdAt": "2024-06-01T10:00:00Z",
+        "updatedAt": "2024-06-01T10:00:00Z"
     },
     {
         "id": "2",
-        "titulo": "Tarefas do trabalho",
-        "texto": "Enviar relatório até sexta",
-        "criadoEm": "2024-06-02T14:30:00Z"
+        "title": "Tarefas do trabalho",
+        "content": "Enviar relatório até sexta",
+        "createdAt": "2024-06-02T14:30:00Z",
+        "updatedAt": "2024-06-02T14:30:00Z"
     }
 ]
